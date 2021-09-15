@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap');
+
+:root {
+  font-size: 16px;
+  --white30: white;
+  --white20: #A5A3A5;
+  --white10: #3A3539;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--white30);
+  font-family: 'Nunito', sans-serif;
+  background: #251F24;
+  margin: 0;
+}
+
+p{
+  color: var(--white20);
+}
+
+a {
+  color: var(--white30);
+}
+
+hr{
+  margin-block: 40px;
+  border-color: rgba(97, 97, 97, 0.2);
+}
+
+h1 {
+  font-size: 40px;
+  margin-block-start: 20px;
+  margin-block-end: 16px;
+}
+
+h2{
+  font-size: 2em;
+  margin-block: 40px;
+}
+
+h3{
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-block: 16px;
+}
+
+h4{
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.header-content{
+  padding-inline: 20px;
+}
+
+header{
+  margin-block-start: 20px;
+  font-size: 14px;
+  color: var(--white30);
+  inline-size: 306px;
+}
+
+header li{
+  color: var(--white20);
+  margin-block-end: 16px;
+}
+
+header a {
+  color: var(--white20);
+  text-decoration: none;
+}
+
+header a:hover {
+  color: var(--white30);
+}
+
+nav details summary {
+  font-weight: bold;
+  line-height: 24px;
+}
+
+pre{
+  background: var(--white10);
+  padding: 40px;
+  overflow: auto;
+  border-radius: 8px;
+  /* border: 10px solid #5551FF; */
+  /* box-shadow: -10px 10px 0 0 #ABAAF6; */
+  margin-block-end: 30px;
+}
+
+.hero{
+  background: linear-gradient(96.07deg, #314755 30.63%, #26A0DA 102.18%);
+  block-size: 50px;
+}
+
+.section-content{
+  counter-reset: titleList;
+}
+
+.section-content h3{
+  counter-increment: titleList;
+}
+
+.section-content img {
+  margin-block-start: 40px;
+  display: block;
+  max-inline-size: 100%;
+}
+
+.section-content h3::before{
+  content: counter(titleList, decimal)'. ';
+}
+
+.wrapper{
+  margin: auto;
+  max-inline-size: 902px;
+}
+
+blockquote {
+  line-height: 32px;
+  font-size: 24px;
+  margin-block-start: 80px;
+  margin-block-end: 63px;
+  background-color: var(--white10);
+  border-radius: 8px;
+  padding-inline-start: 24px;
+  padding-inline-end: 24px;
+  padding-block-start: 24px;
+  padding-block-end: 24px;
+}
+
+blockquote p {
+  color: var(--white30)
+}
+
+.main hr {
+  display: none;
+}
+
+.main-content{
+  padding-inline: 16px;
+}
+
+.slider-container{
+  display: block;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+}
+
+.slider-slide{
+  margin: 0;
+  display: inline-block;
+  width: 100%;
+}
+
+.video{
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+
+.slider-bullet-list{
+  margin-block-start: 10px;
+  text-align: center;
+}
+
+.slider-bullet{
+  display: inline-block;
+  inline-size: 17px;
+  block-size: 17px;
+  background: white;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+.form input{
+  inline-size: 100%;
+  border: 1px solid var(--white30);
+  background: #251F24;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding-inline: 16px;
+  padding-block: 12px;
+  color: var(--white30);
+  font-size: 16px;
+  display: block;
+  margin-block-end: 24px;
+}
+
+.form input[type="submit"]{
+  background: #157EFB;
+  border: none;
+}
+
+.form input::-webkit-input-placeholder{
+  color: var(--white20);
+}
+
+.variants{
+  margin-block-end: 40px;
+}
+
+.variants summary{
+  list-style: none;
+}
+
+.variants summary::-webkit-details-marker {
+  display:none;
+}
+
+.variants ul{
+  list-style-type: none;
+  padding-inline-start: 8px;
+}
+
+.variants li{
+  padding-inline-start: 8px;
+  padding-block: 8px;
+}
+
+#NemiumB{
+  background: #000000;
+  border-radius: 4px;
+}
+
+#NemiumB a{
+  color: var(--white30);
+}
+
+.formulario{
+  padding-block-end: 80px;
+}
+
+footer{
+  background: var(--white30);
+}
+
+footer p{
+  margin: 0;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 43.65px;
+  background: var(--white30);
+  color: #251F24;
+  padding-block-start: 48px;
+}
+
+.footer-content{
+  text-align: center;
+}
+
+.footer-content img{
+  margin-block-start: 16px;
+  margin-block-end: 61px;
+}
+
+.resumeC{
+  display: none;
+}
+
+@media screen and (min-width: 1366px) {
+  h1{
+    font-size: 60px;
+    margin-block-start: 64px;
+  }
+
+  .variants{
+    margin-block-end: 104px;
+  }
+
+  .hero{
+    block-size: 350px;
+  }
+
+  .header{
+    position: sticky;
+    inset-block-start: -45px;
+  }
+
+  .header-content{
+    position: relative;
+    inset-block-start: 65px;
+    padding-inline: 0;
+  }
+
+  header {
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-start: -313px;
+  }
+
+  .head-cont{
+    inline-size: 197px;
+  }
+}
