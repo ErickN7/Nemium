@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+  font-size: 16px;
+  --black: black;
+  --gray10: #616161;
+  --purple: #5551FF;
+}
+
+.hero{
+  background: linear-gradient(274.51deg, rgba(74, 0, 224, 0.6) 5%, rgba(142, 45, 226, 0.5) 130.61%), url('../images/NemiumD/patron.png');
+  block-size: 50px;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--black);
+  font-family: 'Rubik', sans-serif;
+  background: white;
+  margin: 0;
+  text-align: center;
+}
+
+body img{
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+}
+
+p{
+  color: var(--white20);
+}
+
+a {
+  color: var(--white30);
+}
+
+hr{
+  margin-block: 64px;
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  font-size: 60px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 71px;
+  margin-block-start: 20px;
+  margin-block-end: 16px;
+}
+
+h2{
+  font-size: 32px;
+  margin-block: 40px;
+  font-weight: normal;
+}
+
+h3{
+  font-size: 24px;
+  font-weight: normal;
+  margin-block: 16px;
+  line-height: 28.13px;
+}
+
+h4{
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+}
+
+.header-content{
+  padding-inline: 20px;
+}
+
+header{
+  /* margin-block-start: 20px; */
+  font-size: 14px;
+  color: var(--white30);
+  inline-size: 208px;
+  text-align: left;
+}
+
+header li{
+  color: var(--white20);
+  margin-block-end: 16px;
+}
+
+header a {
+  color: var(--white20);
+  text-decoration: none;
+}
+
+header a:hover {
+  color: var(--white30);
+}
+
+nav details summary {
+  font-weight: normal;
+  line-height: 24px;
+  color: var(--gray10);
+}
+
+pre{
+  text-align:left;
+  padding: 40px;
+  overflow: auto;
+  border-radius: 8px;
+  background: white;
+  border: 10px solid #5551FF;
+  box-shadow: -10px 10px 0 0 #ABAAF6;
+  margin-block-end: 30px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.section-content{
+  counter-reset: titleList;
+}
+
+.section-content h3{
+  counter-increment: titleList;
+}
+
+.section-content img {
+  margin-block-start: 40px;
+  display: block;
+  max-inline-size: 100%;
+}
+
+.section-content h3::before{
+  content: counter(titleList, decimal)'. ';
+}
+
+.wrapper{
+  margin: auto;
+  max-inline-size: 903px;
+}
+
+blockquote {
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  text-align: left;
+  font-weight: 400;
+  display:table;
+  line-height: 32px;
+  font-size: 24px;
+  margin-block-start: 64px;
+  margin-block-end: 64px;
+  padding-inline-start: 16px;
+  border-left: 4px solid var(--purple);
+}
+
+blockquote p {
+  margin-block: 0;
+  color: black
+}
+
+blockquote p:first-child{
+  margin-block-end: 16px;
+}
+
+blockquote p:last-child::before{
+  content: '-';
+}
+
+.main hr {
+  display: none;
+}
+
+.main hr:first-of-type{
+  display: block;
+}
+
+.main-content{
+  padding-inline: 16px;
+}
+
+.slider-container{
+  display: block;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+}
+
+.slider-slide{
+  margin: 0;
+  display: inline-block;
+  width: 100%;
+}
+
+.video{
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+
+.slider-bullet-list{
+  margin-block-start: 10px;
+  text-align: center;
+}
+
+.slider-bullet{
+  color: var(--purple);
+  display: inline-block;
+  inline-size: 17px;
+  block-size: 17px;
+  background: var(--purple);
+  border-radius: 50%;
+  text-decoration: none;
+  margin-bottom: 40px;
+}
+
+.form{
+  display: block;
+}
+
+.form input{
+  width: 280px;
+  border: 1px solid #616161;
+  background: white;
+  box-sizing: border-box;
+  border-radius: 90px;
+  padding-inline: 16px;
+  padding-block: 12px;
+  color: #424242;
+  font-size: 16px;
+  display: block;
+  line-height: 24px;
+  margin-block-end: 24px;
+  margin-inline-end: 16px;
+}
+
+.wrapper-form{
+  width: 280px;
+}
+
+.form-content{
+  position: relative;
+}
+
+.form input[type="submit"]{
+  position: absolute;
+  width: 119px;
+  background: var(--purple);
+  border: none;
+  color: white;
+  line-height: 27px;
+  right: -3rem;
+  top: 0;
+}
+
+.form input::-webkit-input-placeholder{
+  color: var(--white20);
+}
+
+.variants{
+  margin-block-end: 40px;
+}
+
+.variants summary{
+  list-style: none;
+}
+
+.variants summary::-webkit-details-marker {
+  display:none;
+}
+
+.variants ul{
+  list-style-type: none;
+  padding-inline-start: 8px;
+}
+
+.variants li{
+  padding-inline-start: 8px;
+  padding-block: 8px;
+}
+
+#NemiumD{
+  background: #000000;
+  border-radius: 4px;
+}
+
+#NemiumD a{
+  color: white;
+}
+
+.formulario{
+  text-align: left;
+  padding-block-end: 80px;
+}
+
+footer{
+  background: #212429;
+}
+
+footer p{
+  margin: 0;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 43.65px;
+  color: white;
+  padding-block-start: 48px;
+}
+
+.footer-content{
+  text-align: center;
+}
+
+.footer-content img{
+  margin-block-start: 16px;
+  margin-block-end: 61px;
+}
+
+.resumeC{
+  display: none;
+}
+
+#lineC{
+  display: none;
+}
+
+.remark{
+  color: var(--purple)
+}
+
+.section-content ul li{
+  list-style: none;
+  font-weight: normal;
+  line-height: 24px;
+  margin-block: 16px;
+}
+
+.section-content ul li::before{
+  content: "\2022";
+  color: var(--purple);
+  font-weight: bold;
+  display: inline-block;
+  width: 10px;
+  margin-left: -10px;
+  font-size: 19px;
+}
+
+.box-model{
+  text-align: left;
+}
+
+.box-model h3{
+  margin-block-start: 40px;
+}
+
+.main-content > p {
+  text-align: left;
+}
+
+.options-header li{
+  padding-block: 8px;
+}
+
+.options-header li::before{
+  background-color: orange;
+}
+
+.options-header ol li:hover{
+  background: var(--purple);
+  margin-left: 10px;
+}
+
+.head-cont summary{
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.head-cont:last-child summary{
+  color: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (min-width: 1366px) {
+  h1{
+    font-size: 60px;
+    margin-block-start: 64px;
+  }
+
+  .variants{
+    margin-block-end: 104px;
+  }
+
+  .header{
+    position: sticky;
+    inset-block-start: -45px;
+    margin-block-end: 64px;
+  }
+
+  header {
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-end: -210px;
+  }
+
+  .header-content{
+    position: relative;
+    inset-block-start: 80px;
+    padding-inline: 0;
+  }
+
+  .box-model{
+    margin-block-start: 162.53px;
+    margin-block-end: 84px;
+  }
+
+  .form{
+    display: inline-flex;
+  }
+
+  .hero{
+    block-size: 350px;
+  }
+}
