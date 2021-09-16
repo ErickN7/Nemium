@@ -265,6 +265,14 @@ footer p{
   display: none;
 }
 
+.section-content:last-of-type h3::before{
+  content: '';
+}
+
+.box-model-slider h3::before{
+  content: '';
+}
+
 @media screen and (min-width: 1366px) {
   h1{
     font-size: 60px;

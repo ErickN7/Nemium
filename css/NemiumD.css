@@ -358,10 +358,6 @@ footer p{
   padding-block: 8px;
 }
 
-.options-header li::before{
-  background-color: orange;
-}
-
 .options-header ol li:hover{
   background: var(--purple);
   margin-left: 10px;
@@ -374,6 +370,14 @@ footer p{
 
 .head-cont:last-child summary{
   color: rgba(0, 0, 0, 0.5);
+}
+
+.section-content:last-of-type h3::before{
+  content: '';
+}
+
+.box-model-slider h3::before{
+  content: '';
 }
 
 @media screen and (min-width: 1366px) {
