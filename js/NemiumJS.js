@@ -1,4 +1,8 @@
 function changeCSS(cssFile, imgFolder) {
+  var element_loading = document.getElementById("loading");
+  element_loading.classList.add("loading-open");
+  element_loading.classList.remove("loading-close");
+
   var oldlink = document.getElementsByClassName('styles')[0];
   oldlink.removeAttribute('href');
   oldlink.setAttribute('href', cssFile);
@@ -30,4 +34,9 @@ function changeCSS(cssFile, imgFolder) {
   var imgTwitter = document.getElementById('twitter_image');
   imgTwitter.removeAttribute('src');
   imgTwitter.setAttribute('src', imgFolder + '/twitter.png');
+
+  setTimeout(function() {
+    element_loading.classList.add("loading-close");
+    element_loading.classList.remove("loading-open");
+  }, 3000);
 }

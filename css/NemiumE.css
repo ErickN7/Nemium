@@ -20,11 +20,6 @@ body {
   color: var(--purple);
 }
 
-/*
-a {
-  color: var(--white30);
-} */
-
 hr{
   margin-block: 64px;
   border-color: rgba(97, 97, 97, 0.2);
@@ -392,7 +387,7 @@ h4{
 
   .header-content{
     position: relative;
-    inset-block-start: 10px;
+    inset-block-start: 60px;
     padding-inline: 0;
   }
 

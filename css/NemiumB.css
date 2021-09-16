@@ -89,8 +89,6 @@ pre{
   padding: 40px;
   overflow: auto;
   border-radius: 8px;
-  /* border: 10px solid #5551FF; */
-  /* box-shadow: -10px 10px 0 0 #ABAAF6; */
   margin-block-end: 30px;
 }
 
@@ -258,7 +256,7 @@ footer p{
 
 .footer-content img{
   margin-block-start: 16px;
-  margin-block-end: 61px;
+  margin-block-end: 45px;
 }
 
 .resumeC{
@@ -271,6 +269,14 @@ footer p{
 
 .box-model-slider h3::before{
   content: '';
+}
+
+#lineC{
+  display: none;
+}
+
+.email-to-send{
+  color: #157EFB;
 }
 
 @media screen and (min-width: 1366px) {

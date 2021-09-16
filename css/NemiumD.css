@@ -75,7 +75,6 @@ h4{
 }
 
 header{
-  /* margin-block-start: 20px; */
   font-size: 14px;
   color: var(--white30);
   inline-size: 208px;
@@ -378,6 +377,10 @@ footer p{
 
 .box-model-slider h3::before{
   content: '';
+}
+
+.box-model-slider h3{
+  text-align: left;
 }
 
 @media screen and (min-width: 1366px) {

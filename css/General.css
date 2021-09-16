@@ -1,0 +1,29 @@
+.loading-open{
+  display: block;
+  position: fixed;
+  inset: 0;
+  background: #E5E5E5;
+  z-index: 1;
+  transition: width 2s;
+}
+
+.loading-open::before{
+  content: "Cambiando plantilla";
+  color: black;
+  font-size: 40px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Arial, Helvetica;
+}
+
+.loading-close{
+  display: none;
+}
+
+#loading h1 {
+  text-align: center;
+  color: black;
+}
